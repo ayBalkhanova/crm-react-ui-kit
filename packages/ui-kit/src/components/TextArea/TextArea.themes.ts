@@ -59,7 +59,8 @@ const TextAreaBaseValues: Omit<
     'var(--crm-ui-kit-border-radius-default)',
   '--crm-ui-kit-textarea-spacing': '4px',
   '--crm-ui-kit-textarea-width': '100%',
-  '--crm-ui-kit-textarea-min-height': '0',
+  '--crm-ui-kit-textarea-min-height':
+    'calc(var(--crm-ui-kit-textarea-line-height) + var(--crm-ui-kit-textarea-padding-top) + var(--crm-ui-kit-textarea-padding-bottom))',
   '--crm-ui-kit-textarea-border-width': '1px',
   '--crm-ui-kit-textarea-border-style': 'solid',
   '--crm-ui-kit-textarea-scrollbar-thumb-background':

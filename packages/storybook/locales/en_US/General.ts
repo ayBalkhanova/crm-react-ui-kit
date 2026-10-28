@@ -165,4 +165,15 @@ export default {
   'Theming with Text component': 'Theming with Text component',
   'List theming description':
     '`List` inherits theme tokens from its parent `Text` component. Pass `theme` to `Text` — the `List` inside picks it up automatically without needing its own `theme` prop.',
+
+  /* Tabs */
+  'General': 'General',
+  'Team': 'Team',
+  'Automation': 'Automation',
+  'Tabs general content':
+    'Account name, language, time zone and date format. These settings apply to every user of the account.',
+  'Tabs team content':
+    'Users, groups and access rights. Invite teammates and choose what each of them can see and edit.',
+  'Tabs automation content':
+    'Triggers and bots that move leads and create tasks.',
 };

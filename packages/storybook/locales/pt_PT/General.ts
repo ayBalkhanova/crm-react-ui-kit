@@ -165,4 +165,15 @@ export default {
   'Theming with Text component': 'Personalização com o componente Text',
   'List theming description':
     '`List` herda os tokens de tema do seu componente pai `Text`. Passe `theme` para `Text` — o `List` interno o recebe automaticamente sem precisar de sua própria prop `theme`.',
+
+  /* Tabs */
+  'General': 'Geral',
+  'Team': 'Equipe',
+  'Automation': 'Automação',
+  'Tabs general content':
+    'Nome da conta, idioma, fuso horário e formato de data. Estas configurações se aplicam a todos os usuários da conta.',
+  'Tabs team content':
+    'Usuários, grupos e permissões de acesso. Convide colegas e escolha o que cada um pode ver e editar.',
+  'Tabs automation content':
+    'Gatilhos e bots que movem os leads e criam tarefas.',
 };

@@ -1,3 +1,5 @@
+import { TextPrimaryTheme, type TextTheme } from '@ui-kit/components/Text';
+
 type TextAreaThemeKey =
   | '--crm-ui-kit-textarea-font-size'
   | '--crm-ui-kit-textarea-font-weight'
@@ -78,4 +80,9 @@ export const TextareaDarkTheme: TextAreaTheme = {
   ...TextAreaBaseValues,
   '--crm-ui-kit-textarea-border-color':
     'var(--crm-ui-kit-palette-border-primary)',
+};
+
+export const TextAreaInvalidTextTheme: TextTheme = {
+  ...TextPrimaryTheme,
+  '--crm-ui-kit-text-color': 'var(--crm-ui-kit-textarea-error-color)',
 };

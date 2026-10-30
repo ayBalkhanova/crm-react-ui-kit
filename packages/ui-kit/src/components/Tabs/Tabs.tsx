@@ -24,8 +24,9 @@ export const Tabs = forwardRef<El, TabsProps>((props, ref) => {
     <RadixTabsRoot
       ref={ref}
       className={cx(s.tabs, themeClassName, className)}
-      onValueChange={onChange}
       {...rest}
+      onValueChange={onChange}
+      orientation="horizontal"
     >
       {children}
     </RadixTabsRoot>

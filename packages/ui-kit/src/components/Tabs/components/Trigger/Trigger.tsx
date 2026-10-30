@@ -16,10 +16,6 @@ export const Trigger = forwardRef<El, TriggerProps>((props, ref) => {
       ref={ref}
       className={cx(s.trigger, className)}
       {...rest}
-      /**
-       * The mockup has no disabled tab, so `disabled` is omitted from the
-       * props and also overridden here in case it comes past the types.
-       */
       disabled={false}
     >
       {children}

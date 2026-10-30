@@ -7,7 +7,7 @@ import { type TriggerProps } from './components/Trigger';
 import { type ContentProps } from './components/Content';
 
 export interface TabsProps
-  extends Omit<RadixTabsProps, 'onValueChange' | 'onChange'> {
+  extends Omit<RadixTabsProps, 'onValueChange' | 'onChange' | 'orientation'> {
   /**
    * Object with CSS theme properties.
    */

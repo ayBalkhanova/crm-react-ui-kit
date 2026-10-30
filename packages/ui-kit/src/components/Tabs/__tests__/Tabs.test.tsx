@@ -236,4 +236,20 @@ describe('Tabs', () => {
 
     expect(handleChange).toHaveBeenCalledWith('team');
   });
+
+  it('should ignore orientation passed past the types', async () => {
+    const forbiddenProps = { orientation: 'vertical' } as object;
+
+    renderTabs({ defaultValue: 'general', ...forbiddenProps });
+
+    expect(screen.getByRole('tablist')).toHaveAttribute(
+      'aria-orientation',
+      'horizontal'
+    );
+
+    await userEvent.tab();
+    await userEvent.keyboard('{ArrowRight}');
+
+    expect(getTab('Team')).toHaveFocus();
+  });
 });
